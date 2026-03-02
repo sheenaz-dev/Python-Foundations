@@ -46,7 +46,7 @@ Mastered the use of "Conditional Logic" concept using `if` and `else` and `elif`
 Created "The Secret Password Vault" mini project for If Else
 Created "The Movie Ticket Grader" mini project for Elif
 
-# Project 2 : Fortune Cookie Generator
+# Project 3 : Fortune Cookie Generator
 
 ### "Project Overview"
 Developed a restaurant-style fortune cookie generator that provides randomized "message" and lucky numbers to users.
@@ -65,6 +65,26 @@ Developed a restaurant-style fortune cookie generator that provides randomized "
 Mastered the use of `while` and `for` loops. 
 Created "Rocket Launcher " mini project for while loop
 Created "Task Automator " mini project for for loop
+
+# Lesson 5 : Functions
+Mastered to create reusable blocks of code using `def`. 
+Created "Welcome Greeter" mini project 
+
+# Project 4 : Adventure Game
+
+### Project Overview
+Engineered a non-linear, text-based adventure game utilizing modular programming. This project manages complex user-driven branching paths.
+
+### Technical Skills Applied
+* Organized game logic into reusable blocks, making the code easier to debug and expand.
+* Used function returns to communicate state changes to the main game engine.
+* Implemented a `while` loop to maintain an active program state until a "win" or "loss" condition is met.
+* Developed multiple "if/else" decision trees to provide different outcomes based on user input.
+
+### Execution Logic
+1. Each room is defined as a unique function.
+2. A central `while` loop acts as the engine, directing the player to the correct function based on the current "room" variable.
+3. The loop breaks only when a terminal state ("end") is reached.
 
 
 
