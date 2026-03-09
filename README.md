@@ -118,5 +118,57 @@ The score_word() function iterates through any string and sums the points based 
 A player_to_words dictionary organizes gameplay by mapping names to a list of played words.
 The engine loops through each player, calculates their total via the scoring function, and stores the final rankings in player_to_points.
 
+# Lesson 9 : File Handling
+Mastered reading from and writing to external .txt and .csv files.
+Learned to make data "persistent" so it survives after the program stops.
 
+# Project 10 : The Permanent Leaderboard
+Project Overview: Upgraded previous projects to store high scores and student records in a permanent text file.
+Technical Skills: * Utilized the with open() statement to safely manage file streams.
+Applied .read() and .write() methods to transfer data between Python and the hard drive.
+Used .strip() and .split() to clean and format data coming in from text files.
 
+### Execution Logic
+The program checks for an existing data.txt file to load previous session information.
+User input is processed and added to the current data collection in memory.
+Before exiting, the program "dumps" the updated collection back into the text file, overwriting the old data with the new results.
+
+# Lesson 10 : Classes & Objects
+Mastered the ability to create custom "Blueprints" (Classes) to organize complex data structures.
+Learned to generate unique "Instances" (Objects) that hold their own specific data and behaviors.
+
+# Project 11 : Italian Restaurant System
+### Project Overview
+Engineered a professional business management system for an Italian restaurant chain using Object-Oriented Programming (OOP). This project organizes menus, physical franchises, and overall business data into a logical hierarchy.
+
+### Technical Skills Applied
+Class Construction: Developed specialized Menu, Franchise, and Business classes to model real-world entities.
+Method Development: Built a .calculate_bill() function to automate pricing and an .available_menus() tool to filter content based on time.
+Constructors (init): Implemented constructors to initialize objects with specific addresses, times, and price lists.
+String Representation (repr): Used dunder methods to create human-readable summaries of complex objects.
+
+### Execution Logic
+Menu Objects are created first, storing dictionary data for items and 24-hour availability windows.
+Franchise Objects act as containers, grouping multiple menus under a unique physical address.
+The Business Class acts as the top-level manager, overseeing multiple franchise locations.
+Logic methods allow the program to calculate totals and tell customers exactly what they can order at any given time.
+
+# Final Project : The ISA Tech Support Bot
+Mastered the integration of Dictionaries, Loops, and File Handling to create a functional school utility.
+Developed a "Human-in-the-Loop" system that captures unresolved data for future system updates.
+
+### Project Overview : Virtual Assistant & Issue Logger
+
+Engineered an automated help-desk solution designed to assist students and faculty at the International Scholars Academy with common technical challenges. The bot provides instant solutions to known issues and archives unknown queries to a permanent log for administrative review.
+
+### Technical Skills Applied
+Knowledge Mapping: Implemented a Dictionary-based knowledge base to link specific technical keywords (e.g., "WiFi," "Schoology") to instructional solutions.
+Natural Language Processing (Basic): Used string normalization (.lower()) and membership testing (in) to identify user intent within full sentences.
+Persistent Logging: Leveraged File Handling in Append ('a') mode to ensure that any "unresolved" student issues are saved to the disk for human intervention.
+Infinite Loop Control: Applied a while True loop with a defined break condition to maintain a seamless user experience.
+
+### Execution Logic
+The program initializes a "Knowledge Base" containing the most frequent tech support tickets.
+The bot enters a continuous loop, awaiting user input to identify technical keywords.
+If a match is found, the system delivers a targeted instruction set to the user.
+If the issue is unknown, the system automatically triggers a background process to write the query into pending_requests.txt, ensuring no student request is ignored.
