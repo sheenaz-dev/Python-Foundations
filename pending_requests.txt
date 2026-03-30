@@ -1,1 +1,2 @@
 UNRESOLVED: grades not showing
+UNRESOLVED: laptop showing blue screen
